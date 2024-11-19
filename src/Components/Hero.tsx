@@ -8,7 +8,7 @@ function Hero(){
         <div className="Hero-Div">
             <div className="Hero-Both">
             <div>
-                <Image src={"/Images/New.jfif"}
+                <Image src={"/Images/New.jpg"}
                 width={200}
                 height={200}
                 className="Hero-image"
