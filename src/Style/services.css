@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Add this for consistent padding and margin calculations */
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    min-height: 500px; /* Ensure a minimum height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add padding for smaller screens */
+}
+
+.ser-container {
+    width: 90%;
+    max-width: 1200px; /* Add a max width for better layout on large screens */
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center; 
+    box-shadow: 1px 4px 10px grey;
+    padding: 20px;
+}
+
+.ser-top {
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center text for better mobile presentation */
+}
+
+.boxes-con {
+    width: 100%;   
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.boxes {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    min-height: 200px; /* Ensure a minimum height */
+    border: 2px solid grey;
+    margin: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.ser-title {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ser-des {
+    margin-top: 20px;
+    padding: 10px; /* Add padding for better readability on mobile */
+    text-align: center; /* Center text for better mobile presentation */
+}
+
+.ser-icon {
+    font-size: 120px;
+}
+
+/* Media Query for tablets */
+@media (max-width: 768px) {
+    .ser-container {
+        width: 95%;
+    }
+
+    .ser-top {
+        width: 100%;
+    }
+
+    .boxes {
+        width: 45%;
+        max-width: none; /* Remove max-width constraint */
+    }
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 480px) {
+    .ser-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .boxes {
+        width: 90%;
+        margin: 10px 0; /* Add more vertical margin for better spacing */
+    }
+
+    .ser-title {
+        font-size: 24px; /* Reduce font size for smaller screens */
+    }
+
+    .ser-icon {
+        font-size: 80px; /* Reduce icon size for smaller screens */
+    }
+}
+

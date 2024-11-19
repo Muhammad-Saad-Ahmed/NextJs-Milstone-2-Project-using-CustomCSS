@@ -1,0 +1,133 @@
+/* Base styles for mobile-first approach */
+.Hero-Div {
+    width: 100%;
+    height: auto; /* Changed from fixed height to auto */
+    min-height: 400px; /* Ensures a minimum height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Padding for smaller screens */
+}
+
+.Hero-Both {
+    width: 90%; /* Slightly smaller width for better mobile fit */
+    max-width: 1200px; /* Max width for large screens */
+    height: auto;
+    min-height: 90%;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 1px 4px 10px grey;
+    padding: 20px;
+    gap: 20px;
+}
+
+.Hero-right {
+    width: 100%; /* Default to 100% width for smaller screens */
+}
+
+.Hero-image {
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover; /* Maintain aspect ratio */
+    margin-bottom: 15px; /* Margin added for better spacing on mobile */
+}
+
+.Hero-Head {
+    font-size: 27px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 30px;
+}
+
+.Hero-Content {
+    line-height: 25px;
+    padding: 10px;
+}
+
+span {
+    color: aqua;
+    font-size: 30px;
+}
+
+.Hero-Button {
+    background-color: rgb(247, 247, 247);
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Hero-Button:hover {
+    background-color: #e0e0e0;
+}
+
+.icon-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+.Icon1, .Icon2, .Icon3 {
+    font-size: 30px;
+}
+
+/* Media Query for tablets and mobile devices */
+@media screen and (max-width: 700px) {
+    .Hero-Both {
+        width: 100%;
+        flex-direction: column; /* Stacks content vertically */
+        padding: 10px; /* Adjust padding for smaller devices */
+    }
+
+    .Hero-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .Hero-right {
+        width: 100%;
+        text-align: center; /* Center text for better presentation */
+    }
+
+    .Hero-Head {
+        font-size: 24px; /* Reduced for smaller screens */
+    }
+
+    .Hero-Content {
+        padding: 5px;
+        line-height: 22px;
+    }
+
+    .Hero-Button {
+        padding: 8px 16px; /* Adjusted padding */
+        margin-top: 20px; /* Reduced margin */
+    }
+}
+
+/* Optional Media Query for very small devices (e.g., older smartphones) */
+@media screen and (max-width: 400px) {
+    .Hero-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .Hero-Head {
+        font-size: 20px;
+    }
+
+    .Hero-Content {
+        font-size: 14px; /* Smaller font for readability */
+    }
+
+    .Hero-Button {
+        padding: 6px 12px; /* Smaller padding for compact buttons */
+    }
+}
+
+

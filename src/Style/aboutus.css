@@ -1,0 +1,145 @@
+/* Base styles for the About-Div component */
+.About-Div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color for contrast */
+}
+
+.About-Both {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    gap: 20px;
+}
+
+/* Left section styling */
+.About-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.icon-div {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.icon-div a {
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.Icon1, .Icon2, .Icon3 {
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.Icon1:hover {
+    color: #3b5998; /* Facebook blue */
+    transform: scale(1.1);
+}
+
+.Icon2:hover {
+    color: #FF0000; /* YouTube red */
+    transform: scale(1.1);
+}
+
+.Icon3:hover {
+    color: #C13584; /* Instagram magenta */
+    transform: scale(1.1);
+}
+
+/* Right section styling */
+.About-right {
+    width: 100%;
+}
+
+.About-Head {
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 15px;
+}
+
+.About-Content {
+    line-height: 1.6;
+    padding: 10px 0;
+}
+
+.About-Content ul {
+    margin-left: 20px;
+}
+
+.About-Content li {
+    margin-bottom: 10px;
+}
+
+.About-Content p {
+    margin-top: 15px;
+}
+
+    /* Media Query for tablets and mobile devices */
+    @media screen and (max-width: 768px) {
+        .About-Both {
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+            gap: 15px;
+        }
+
+        .About-image {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+
+        .icon-div {
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .About-Head {
+            font-size: 24px;
+        }
+
+        .About-Content {
+            padding: 5px;
+            text-align: center;
+        }
+
+        .About-Content ul {
+            margin-left: 0;
+            padding-left: 15px;
+        }
+    }
+
+    /* Media Query for small mobile devices */
+    @media screen and (max-width: 480px) {
+        .About-image {
+            width: 120px;
+            height: 120px;
+        }
+
+        .Icon1, .Icon2, .Icon3 {
+            font-size: 25px;
+        }
+
+        .About-Head {
+            font-size: 20px;
+        }
+
+        .About-Content {
+            font-size: 14px;
+        }
+    }

@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Header-container {
+    background-color: rgb(247, 247, 247);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px; /* Added padding for consistent spacing */
+}
+
+.Left-Div {
+    padding-left: 40px;
+}
+
+.Right-Div {
+    width: 40%;
+    font-size: large;
+    font-weight: bold;
+}
+
+.Div-Nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px; /* Added gap for spacing between nav items */
+}
+
+.Div-Nav li {
+    list-style: none;
+}
+
+.Nav-Link {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition effect */
+}
+
+.Nav-Link:hover {
+    text-decoration: underline 2px;
+    text-transform: uppercase;
+    color: #555; /* Slightly change color on hover for better UX */
+}
+
+/* Media Query for smaller screens (mobile devices) */
+@media screen and (max-width: 700px) {
+    .Header-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px; /* Reduced padding for smaller screens */
+        text-align: center; /* Center text content for better appearance */
+    }
+
+    .Left-Div {
+        padding-left: 0; /* Remove padding for better centering */
+        margin-bottom: 10px; /* Add margin to separate from .Right-Div */
+    }
+
+    .Right-Div {
+        width: 100%;
+        font-size: medium; /* Reduced font size for better layout on smaller screens */
+    }
+
+    .Div-Nav {
+        flex-direction: column;
+        gap: 10px; /* Add vertical spacing between navigation items */
+    }
+
+    .Nav-Link {
+        font-size: medium; /* Adjust font size for readability */
+    }
+}
